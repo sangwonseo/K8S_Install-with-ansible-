@@ -21,7 +21,7 @@
       gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg
         https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
 
- - name: Installing required packages
+  - name: Installing required packages
     yum:
      name: "{{ item }}"
      state: present
@@ -32,7 +32,7 @@
      name: "{{ item }}"
      state: started
      enabled: yes
-    with_items: "{{ services }}"
+     with_items: "{{ services }}"
 
   - name: Allow Network Ports in Firewalld
     firewalld:
