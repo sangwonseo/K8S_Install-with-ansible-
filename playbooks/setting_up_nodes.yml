@@ -20,19 +20,18 @@
       repo_gpgcheck=1
       gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg
         https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
-
   - name: Installing required packages
     yum:
      name: "{{ item }}"
      state: present
-     with_items: "{{ packages }}"
+    with_items: "{{ packages }}"
 
   - name: Starting and Enabling the required services
     service:
      name: "{{ item }}"
      state: started
      enabled: yes
-     with_items: "{{ services }}"
+    with_items: "{{ services }}"
 
   - name: Allow Network Ports in Firewalld
     firewalld:
@@ -40,8 +39,7 @@
      state: enabled
      permanent: yes
      immediate: yes
-     with_items: "{{ ports }}"
+    with_items: "{{ ports }}"
 
   - name: Enabling Bridge Firewall Rule
     shell: "echo '1' > /proc/sys/net/bridge/bridge-nf-call-iptables"
-
