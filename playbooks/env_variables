@@ -2,7 +2,6 @@
 ad_addr: 49.254.105.241
 cidr_v: 10.244.0.0/16
 
-# Install mandatory packages 
 packages:
 - docker
 - kubeadm
