@@ -3,8 +3,7 @@
 ad_addr: 49.254.105.241
 cidr_v: 10.244.0.0/16
 
-###################################################################################
-# Dont Edit these below values, these are mandatory to configure kubernetes cluster
+# Install mandatory packages 
 packages:
 - docker
 - kubeadm
@@ -13,12 +12,9 @@ packages:
 services:
 - docker
 - kubelet
-# - firewalld
 
 ports:
 - "6443/tcp"
 - "10250/tcp"
 
 token_file: join_token
-###################################################################################
-# Dont Edit these above values, these are mandatory to configure kubernetes cluster
