@@ -1,5 +1,4 @@
-#Edit these values only as per your environment
-#Enter your master node advertise ip address and cidr range for the pods.
+# Put master node advertise ip address and cidr range for the pods.
 ad_addr: 49.254.105.241
 cidr_v: 10.244.0.0/16
 
@@ -17,4 +16,5 @@ ports:
 - "6443/tcp"
 - "10250/tcp"
 
+# File to store cluster join token 
 token_file: join_token
