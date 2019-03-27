@@ -3,6 +3,11 @@
   vars_files:
   - env_variables
   tasks:
+  - name: disable & stop Firewall 
+    shell: |
+     systemctl disable firewalld
+     systemctl stop firewalld
+
   - name: Disabling Swap on all nodes
     shell: swapoff -a
 
