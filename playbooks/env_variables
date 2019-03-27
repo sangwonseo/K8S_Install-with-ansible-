@@ -1,5 +1,5 @@
 # Put master node advertise ip address and cidr range for the pods.
-ad_addr: 49.254.105.181
+ad_addr: 49.254.105.180
 cidr_v: 10.244.0.0/16
 
 # Install & start packages & service & port 
