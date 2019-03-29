@@ -6,8 +6,8 @@
   - name: Pulling images required for setting up a Kubernetes cluster
     shell: kubeadm config images pull
 
-  - name: Initializing Kubernetes cluster
-    shell: kubeadm init --apiserver-advertise-address={{ad_addr}} --pod-network-cidr={{cidr_v}}
+  - name: Initializing Kubernetes cluster 
+    shell: kubeadm init --apiserver-advertise-address={{ad_addr}} --pod-network-cidr={{cidr_v}} --kubernetes-version={{k8s_v}}
     register: output
 
   - name: Storing Logs and Generated token for future purpose.
