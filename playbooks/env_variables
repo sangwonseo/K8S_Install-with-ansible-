@@ -6,8 +6,8 @@ k8s_v: v1.13.3
 # Install & start packages & service & port 
 packages:
 - docker
-- kubeadm
-- kubectl
+- kubeadm-1.13.3
+- kubectl-1.13.3
 
 services:
 - docker
