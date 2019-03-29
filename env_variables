@@ -1,6 +1,7 @@
 #Enter your master node advertise ip address and cidr range for the pods.
 ad_addr: 49.254.105.180
 cidr_v: 10.244.0.0/16
+k8s_v: v1.13.3
 
 - docker
 - kubeadm
