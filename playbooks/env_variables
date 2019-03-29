@@ -14,7 +14,7 @@ services:
 - kubelet
 
 ports:
-- "6443/tcp".0
+- "6443/tcp"
 - "10250/tcp"
 
 # File to store cluster join token 
