@@ -4,8 +4,8 @@ cidr_v: 10.244.0.0/16
 k8s_v: v1.13.3
 
 - docker
-- kubeadm
-- kubectl
+- kubeadm-1.13.3
+- kubectl-1.13.3
 
 services:
 - docker
