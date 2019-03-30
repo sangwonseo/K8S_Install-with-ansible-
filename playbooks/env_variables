@@ -9,7 +9,7 @@ packages:
 - kubelet-1.13.3-0.x86_64 
 - kubeadm-1.13.3-0.x86_64  
 - kubectl-1.13.3-0.x86_64  
-#- kubernetes-cni-0.6.0-0.x86_64
+- kubernetes-cni-0.6.0-0.x86_64
 
 services:
 - docker
