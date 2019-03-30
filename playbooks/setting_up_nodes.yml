@@ -20,7 +20,10 @@
       repo_gpgcheck=1
       gpgkey=https://packages.cloud.google.com/yum/doc/yum-key.gpg
         https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
-        
+ 
+  - name: Add Docker repository
+    shell: yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+    
   - name: Installing required packages
     yum:
      name: "{{ item }}"
@@ -35,5 +38,5 @@
      enabled: yes
     with_items: "{{ services }}"
 
-#  - name: Enabling Bridge Firewall Rule
-#    shell: "echo '1' > /proc/sys/net/bridge/bridge-nf-call-iptables"
+  - name: Enabling Bridge Firewall Rule
+    shell: "echo '1' > /proc/sys/net/bridge/bridge-nf-call-iptables"
