@@ -25,6 +25,7 @@
     yum:
      name: "{{ item }}"
      state: present
+     allow_downgrade: yes 
     with_items: "{{ packages }}"
 
   - name: Starting and Enabling the required services
