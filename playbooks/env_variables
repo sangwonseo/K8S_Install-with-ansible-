@@ -5,13 +5,13 @@ k8s_v: v1.13.3
 
 # Install & start packages & service & port 
 packages:
-- docker-ce-18.06.0.ce-3.el7
+# - docker-ce-18.06.1.ce-3.el7
 - kubelet-1.13.3-0.x86_64 
 - kubeadm-1.13.3-0.x86_64  
 - kubectl-1.13.3-0.x86_64  
 
 services:
-- docker
+# - docker
 - kubelet
 
 ports:
