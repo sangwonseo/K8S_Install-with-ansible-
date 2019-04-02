@@ -11,13 +11,9 @@ packages:
 - kubectl-1.13.3-0.x86_64  
 - kubernetes-cni-0.6.0-0.x86_64
 
-#services:
-#- docker
-#- kubelet
-
-ports:
-- "6443/tcp"
-- "10250/tcp"
+services:
+- docker
+- kubelet
 
 # File to store cluster join token 
 token_file: join_token
